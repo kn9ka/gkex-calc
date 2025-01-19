@@ -1,4 +1,3 @@
-import { type Params } from "@remix-run/react";
 import {
   Link,
   Links,
@@ -6,7 +5,12 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
+} from '@remix-run/react';
+import { type Params } from '@remix-run/react';
+
+import { AppLayout } from '@/app/layout/AppLayout';
+import styles from './root.module.css';
+import { Loader } from '@/shared/ui/Loader/Loader';
 
 export type Handle = {
   breadcrumb: (params: Params<string>) => React.ReactNode;
@@ -18,7 +22,13 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Content Tool</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+          rel="stylesheet"
+        />
+        <title>GK Exchange</title>
         <Meta />
         <Links />
       </head>
@@ -38,9 +48,17 @@ export const handle: Handle = {
 };
 
 export const HydrateFallback = () => {
-  return <div>Loading...</div>;
+  return (
+    <div className={styles.hydration}>
+      <Loader />
+    </div>
+  );
 };
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <AppLayout>
+      <Outlet />
+    </AppLayout>
+  );
 }

@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  background-color: rgba(var(--color-container), 0.8);
+  border-radius: 16px;
+  padding: 12px 16px;
+  gap: 16px;
+  align-items: center;
+}
+.container span {
+  width: 33.3%;
+}
+.container span:nth-child(even) {
+  color: var(--color-text-secondary);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container span:last-child {
+  text-align: right;
+  color: var(--color-accent-2);
+}

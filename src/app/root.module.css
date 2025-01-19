@@ -1,0 +1,47 @@
+:root {
+  --color-container: 36, 9, 39;
+  --color-bg: rgba(var(--color-container), 0.6);
+
+  --font-size-primary: 24px;
+  --font-size-secondary: 14px;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: rgba(153, 131, 158);
+  --color-accent: #e92a67;
+  --color-accent-2: #ffcb09;
+}
+
+html {
+  background: linear-gradient(
+    90deg,
+    #241a4c 0%,
+    #3b1765 20%,
+    #602080 40%,
+    #802f9a 55%,
+    #d862b2 70%,
+    #f79e77 85%,
+    #f8dc7b 100%
+  );
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hydration {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

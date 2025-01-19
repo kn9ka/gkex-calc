@@ -31,6 +31,8 @@ export const ExchangeInput: React.FC<ExchangeInputProps> = ({
             value={value}
             onChange={handleChange}
             disabled={disabled}
+            inputMode="numeric"
+            pattern="[0-9]*"
           />
         </div>
       </div>

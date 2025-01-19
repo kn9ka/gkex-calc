@@ -27,16 +27,35 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+}
+
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* The hack for Safari */
+    height: -webkit-fill-available;
+  }
+}
+
+@supports (height: 100dvh) {
+  body {
+    height: 100dvh;
+  }
 }
 
 .hydration {
   display: flex;
   place-content: center;
   place-items: center;
-  height: 100vh;
+  height: 100dvh;
 }
 
 * {

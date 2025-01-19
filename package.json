@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "remix vite:dev",
     "build": "remix vite:build",
-    "start": "npx sirv-cli build/client/ --port 8080 --single --host 0.0.0.0"
+    "start": "npx sirv-cli build/client/ --port 80 --single --host 0.0.0.0"
   },
   "author": "",
   "license": "ISC",

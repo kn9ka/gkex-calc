@@ -37,6 +37,11 @@
   border: none;
 }
 
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .button em {
   font-style: normal;
   color: var(--color-accent);

@@ -4,6 +4,9 @@ import { ExchangeInput } from './ExchangeInput';
 import { Switch } from './Switch';
 import { ExchangeButton } from './ExchangeButton';
 import { ExchangeRate } from './ExchangeRate';
+import { Contact } from './Contact';
+
+import { useSubmit } from '@remix-run/react';
 
 const Currency = {
   USDT: 'USDT ',
@@ -26,17 +29,31 @@ const CurrencyList = {
 };
 
 export const Home = () => {
+  const submit = useSubmit();
   const [currencyIn, setCurrencyIn] = useState<Currency>(Currency.USDT);
   const [currencyOut, setCurrencyOut] = useState<Currency>(Currency.CASH);
 
   const [amountIn, setAmountIn] = useState<number>(1);
-
+  const [contact, setContact] = useState<string>('');
   const swap = () => {
     setCurrencyIn(currencyOut);
     setCurrencyOut(currencyIn);
   };
 
   const amount = amountIn * CurrencyList[currencyIn].rate;
+
+  const handleSubmit = () => {
+    submit(
+      {
+        amountIn,
+        contact,
+        currencyIn,
+        currencyOut,
+        rate: CurrencyList[currencyIn].rate,
+      },
+      { method: 'post' },
+    );
+  };
 
   return (
     <div className={styles.container}>
@@ -63,7 +80,13 @@ export const Home = () => {
           title={CurrencyList[currencyIn].title}
           rate={CurrencyList[currencyOut].rate.toString()}
         />
-        <ExchangeButton onClick={() => {}} />
+
+        {amountIn > 1 && <Contact onChange={setContact} value={contact} />}
+
+        <ExchangeButton
+          onClick={handleSubmit}
+          disabled={amountIn <= 1 || !contact}
+        />
       </div>
     </div>
   );

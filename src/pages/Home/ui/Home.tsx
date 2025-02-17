@@ -55,6 +55,7 @@ export const Home = () => {
     );
   };
 
+  console.log('first');
   return (
     <div className={styles.container}>
       <div className={styles.content}>

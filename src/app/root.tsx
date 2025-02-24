@@ -11,6 +11,7 @@ import { type Params } from '@remix-run/react';
 import { AppLayout } from '@/app/layout/AppLayout';
 import styles from './root.module.css';
 import { Loader } from '@/shared/ui/Loader/Loader';
+import Header from '@/pages/Home/ui/Header';
 
 export type Handle = {
   breadcrumb: (params: Params<string>) => React.ReactNode;
@@ -38,8 +39,8 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       </head>
 
       <body>
+        <Header />
         {children}
-
         <ScrollRestoration />
         <Scripts />
       </body>

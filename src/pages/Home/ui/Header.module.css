@@ -17,6 +17,7 @@
     place-items: center;
     margin: 0;
     padding: 0;
+    
 }
 
 .link {
@@ -31,9 +32,21 @@
     cursor: pointer;
     color: var(--color-text-primary);
     font-size: var(--font-size-secondary);
-    transition: background-color 200ms ease; /* easeInQuart */
+    background: linear-gradient(
+        90deg,
+        #f8dc7b 0%,
+        #f79e77 20%,
+        #d862b2 40%,
+        #802f9a 60%,
+        #602080 80%,
+        #3b1765 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.link:hover {
-    background-color: #313132;
+.linkBackground {
+    background-color: rgb(var(--color-container));
+    border-radius: var(--border-radius);
+    margin: var(--padding);
 }

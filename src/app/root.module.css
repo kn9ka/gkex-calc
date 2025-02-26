@@ -1,13 +1,22 @@
 :root {
   --color-container: 36, 9, 39;
   --color-bg: rgba(var(--color-container), 0.6);
-
   --font-size-primary: 24px;
   --font-size-secondary: 14px;
-  --color-text-primary: #ffffff;
-  --color-text-secondary: rgba(153, 131, 158);
+  --color-text-primary: #fff;
+  --color-text-secondary: rgb(153, 131, 158);
   --color-accent: #e92a67;
   --color-accent-2: #ffcb09;
+  --border-radius: 12px;
+  --border-size: 1px;
+  --padding: 1px;
+  --border-bg: conic-gradient(
+    from 180deg at 50% 50%,
+    #e92a67 0deg,
+    #a853ba 112.5deg,
+    #2a8af6 228.75deg,
+    rgb(42 138 246 / 0%) 360deg
+  );
 }
 
 html {
@@ -30,7 +39,6 @@ body {
   height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
   position: relative;
-
   display: flex;
   flex-direction: column;
   place-content: center;

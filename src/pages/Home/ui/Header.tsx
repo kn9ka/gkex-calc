@@ -8,16 +8,16 @@ export const Header: React.FC = () => {
     <motion.header className={styles.header}>
       <nav className={styles.nav}>
         <ul className={styles.list}>
-          <li>
+          <li className={styles.linkBackground}>
             <Link className={styles.link} to="/about">О нас</Link>
           </li>
-          <li>
+          <li className={styles.linkBackground}>
             <Link className={styles.link} to="/kyc">KYC/AML</Link>
           </li>
-          <li>
+          <li className={styles.linkBackground}>
             <Link className={styles.link} to="/contacts">Контакты</Link>
           </li>
-          <li>
+          <li className={styles.linkBackground}>
             <Link className={styles.link} to="/reviews">Отзывы</Link>
           </li>
         </ul>

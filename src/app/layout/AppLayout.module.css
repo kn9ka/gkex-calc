@@ -1,2 +1,12 @@
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+}
+
+.container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }

@@ -1,3 +1,4 @@
+/* stylelint-disable declaration-property-value-no-unknown */
 :root {
   --border-radius: 12px;
   --border-size: 1px;
@@ -7,7 +8,7 @@
     #e92a67 0deg,
     #a853ba 112.5deg,
     #2a8af6 228.75deg,
-    rgba(42, 138, 246, 0) 360deg
+    rgb(42 138 246 / 0%) 360deg
   );
 }
 
@@ -21,7 +22,7 @@
   display: inline-block;
   z-index: 0;
   backface-visibility: hidden;
-  perspective: 1000;
+  perspective: 1000px;
   transform: translateZ(0);
 }
 
@@ -50,28 +51,22 @@
 .gradient {
   content: '';
   position: absolute;
-  top: var(--border-size);
-  right: var(--border-size);
-  bottom: var(--border-size);
-  left: var(--border-size);
+  inset: var(--border-size);
   padding: var(--border-size);
-
-  mask:
-    linear-gradient(#fff 0 0) content-box,
+  mask: linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: -1;
   border-radius: calc(var(--border-radius) + var(--border-size));
 }
 
-.gradient:before {
+.gradient::before {
   content: '';
   display: block;
   background: var(--border-bg);
-  box-shadow: 0 0 40px 20px --var(--border-bg);
-  width: calc(100% * 1.41421356237);
-  padding-bottom: calc(100% * 1.41421356237);
+  box-shadow: 0 0 40px 20px var(--border-bg);
+  width: calc(100% * 1.4142);
+  padding-bottom: calc(100% * 1.4142);
   position: absolute;
   left: 50%;
   top: 50%;

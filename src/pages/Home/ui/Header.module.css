@@ -17,6 +17,7 @@
     place-items: center;
     margin: 0;
     padding: 0;
+    
 }
 
 .link {
@@ -31,9 +32,7 @@
     cursor: pointer;
     color: var(--color-text-primary);
     font-size: var(--font-size-secondary);
-    transition: background-color 200ms ease; /* easeInQuart */
-}
-
-.link:hover {
-    background-color: #313132;
+    background: #E5E4E2;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

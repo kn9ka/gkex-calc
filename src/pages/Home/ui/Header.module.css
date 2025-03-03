@@ -36,9 +36,3 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-/* .linkBackground {
-    background-color: rgb(var(--color-container));
-    border-radius: var(--border-radius);
-    margin: var(--padding);
-} */

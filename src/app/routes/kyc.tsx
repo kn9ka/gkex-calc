@@ -5,3 +5,4 @@ const KycPage = () => {
   return <Kyc />
 };
 
+export default KycPage;

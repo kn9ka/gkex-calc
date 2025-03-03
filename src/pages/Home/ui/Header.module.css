@@ -32,21 +32,13 @@
     cursor: pointer;
     color: var(--color-text-primary);
     font-size: var(--font-size-secondary);
-    background: linear-gradient(
-        90deg,
-        #f8dc7b 0%,
-        #f79e77 20%,
-        #d862b2 40%,
-        #802f9a 60%,
-        #602080 80%,
-        #3b1765 100%
-    );
+    background: #E5E4E2;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.linkBackground {
+/* .linkBackground {
     background-color: rgb(var(--color-container));
     border-radius: var(--border-radius);
     margin: var(--padding);
-}
+} */

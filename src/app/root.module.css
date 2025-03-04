@@ -4,12 +4,16 @@
   --font-size-primary: 24px;
   --font-size-secondary: 14px;
   --color-text-primary: #fff;
-  --color-text-secondary: rgb(153, 131, 158);
+  --color-text-secondary: rgb(153 131 158);
+  --color-header: #E5E4E2;
   --color-accent: #e92a67;
   --color-accent-2: #ffcb09;
+  --border-color: #65666B;
   --border-radius: 12px;
   --border-size: 1px;
   --padding: 1px;
+  --padding-text: 15px;
+  --padding-container: 30px;
   --border-bg: conic-gradient(
     from 180deg at 50% 50%,
     #e92a67 0deg,
@@ -68,7 +72,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 400;
   font-style: normal;
 }

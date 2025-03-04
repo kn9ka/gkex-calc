@@ -17,7 +17,6 @@
     place-items: center;
     margin: 0;
     padding: 0;
-    
 }
 
 .link {
@@ -32,7 +31,7 @@
     cursor: pointer;
     color: var(--color-text-primary);
     font-size: var(--font-size-secondary);
-    background: #E5E4E2;
+    background: var(--color-header);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }

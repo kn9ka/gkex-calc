@@ -4,21 +4,22 @@
     justify-content: flex-start;
     align-items: center;
     max-height: 80vh;
-    overflow: auto;
+    overflow: hidden;
     margin: auto;
     color: var(--color-header);
-}
-
-.container::-webkit-scrollbar {
-    width: 0;
-    height: 0;
 }
 
 .contsinerReviews {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    overflow: auto;
     gap: 20px;
     justify-items: center;
+}
+
+.contsinerReviews::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 @media (768px <= width <= 1200px ) {

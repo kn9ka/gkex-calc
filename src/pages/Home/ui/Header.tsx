@@ -15,6 +15,11 @@ export const Header: React.FC = () => {
             <Link className={styles.link} to="/kyc">KYC/AML</Link>
           </li>
           <li className={styles.linkBackground}>
+            <Link className={styles.link} to="/">
+              <img className={styles.img} src="/loader.png" alt="logo" />
+            </Link>
+          </li>
+          <li className={styles.linkBackground}>
             <Link className={styles.link} to="/contacts">Контакты</Link>
           </li>
           <li className={styles.linkBackground}>

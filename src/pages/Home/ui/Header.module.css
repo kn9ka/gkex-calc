@@ -35,3 +35,8 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.img {
+    width: 64px;
+    height: 64px;
+}

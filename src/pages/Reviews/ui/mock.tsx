@@ -1,4 +1,4 @@
-export const reviewsMock = [
+export const REVIEWS = [
   {
     id: 1,
     name: 'Kaya',

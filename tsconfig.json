@@ -29,7 +29,8 @@
       "@/widgets/*": ["./src/widgets/*"],
       // Generic
       "@/generated/*": ["./generated/*"],
-      "@/tests/*": ["./tests/*"]
+      "@/tests/*": ["./tests/*"],
+      "@/public/*":["./public/*"]
     },
     "strictNullChecks": true,
     "strict": true,

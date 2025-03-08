@@ -7,7 +7,7 @@ export const CONTACTS = [
   },
   {
     id: 2,
-    logo: '/public/email.svg',
+    logo: '/email.svg',
     title: 'Email',
     link: 'gkex@gmail.com'
   },

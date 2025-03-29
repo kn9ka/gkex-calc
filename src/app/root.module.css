@@ -2,7 +2,10 @@
   --color-container: 36, 9, 39;
   --color-bg: rgba(var(--color-container), 0.6);
   --font-size-primary: 24px;
-  --font-size-secondary: 14px;
+  --font-size-secondary: 20px;
+  --font-size-third: 18px;
+  --font-wight-bold: 600;
+  --font-wight-normal: 400;
   --color-text-primary: #fff;
   --color-text-secondary: rgb(153 131 158);
   --color-header: #E5E4E2;
@@ -74,6 +77,7 @@ body {
 * {
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
-  font-weight: 400;
+  font-weight: var(--font-wight-normal);
+  font-size: var(--font-size-third);
   font-style: normal;
 }

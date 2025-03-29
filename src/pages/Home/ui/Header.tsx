@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
       <nav className={styles.nav}>
         <ul className={styles.list}>
           <li className={styles.linkBackground}>
-            <Link className={styles.link} to="/">Главная</Link>
+            <Link className={styles.link} to="/PrivacyPolicy">Privacy Policy</Link>
           </li>
           <li className={styles.linkBackground}>
             <Link className={styles.link} to="/kyc">KYC/AML</Link>

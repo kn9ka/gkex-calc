@@ -3,14 +3,13 @@ import styles from './Reviews.module.css';
 import Review from './Review';
 import { REVIEWS } from './mock';
 
-
 const Reviews: React.FC = () => {
   return (
     <div className={styles.container}>
-      <h1>Отзывы</h1>
+      <h1>Reviews</h1>
       <div className={styles.contsinerReviews}>
-        {REVIEWS.map(review => (
-          <Review 
+        {REVIEWS.map((review) => (
+          <Review
             key={review.id}
             name={review.name}
             date={review.date}

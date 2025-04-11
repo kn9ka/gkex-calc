@@ -9,7 +9,7 @@ export const CONTACTS = [
     id: 2,
     logo: '/email.svg',
     title: 'Email',
-    link: 'Info@gk.exchange',
+    link: 'info@gk.exchange',
   },
   {
     id: 3,

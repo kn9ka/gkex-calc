@@ -9,16 +9,16 @@ const PrivacyPolicy: React.FC = () => {
       <p className={styles.text}><b>Effective Date:</b> March 27, 2025</p>
       <p className={styles.text}>
         <b>GK Capital Ventures LLC</b>
-        (“we”, “our”, “us”) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+        We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose and protect your information when you visit our website or use our services.
       </p>
       <h2 className={styles.subtitle}>
-        1. Company Details
+        1. Company Information
       </h2>
       <ul className={styles.list}>
         <li><b>Company Name:</b>GK Capital Ventures LLC</li>
         <li><b>Entity Number:</b>202461915226</li>
         <li><b>Registered Address:</b>14852 Ventura Blvd, Unit 122, Sherman Oaks, CA 91403</li>
-        <li><b>Email:</b>info@gkcapitalventuresllc.com</li>
+        <li><b>Email:</b>info@gk.exchange</li>
       </ul>
       <h2 className={styles.subtitle}>
         2. What Information We Collect
@@ -34,17 +34,17 @@ const PrivacyPolicy: React.FC = () => {
       </h2>
       <ul className={styles.list}>
         We use the collected information to:
-        <li>Provide and maintain our services</li>
-        <li>Communicate with you</li>
-        <li>Improve our website and offerings</li>
-        <li>Comply with legal obligations</li>
+        <li>Providing and supporting our services</li>
+        <li>Communicating with you</li>
+        <li>Improving our website and offerings</li>
+        <li>Complying with legal obligations</li>
       </ul>
       <h2 className={styles.subtitle}>
         4. How We Share Your Information
       </h2>
       <ul className={styles.list}>
         We do not sell or rent your personal information. We may share data with:
-        <li>Service providers under contract</li>
+        <li>Contracted service providers</li>
         <li>Legal authorities when required by law</li>
       </ul>
       <h2 className={styles.subtitle}>
@@ -74,7 +74,7 @@ const PrivacyPolicy: React.FC = () => {
       </p>
       <p className={styles.text}>
         <b>GK Capital Ventures LLC</b>
-        Email: info@gkcapitalventuresllc.com
+        Email: info@gk.exchange
         Address: 14852 Ventura Blvd, Unit 122, Sherman Oaks, CA 91403
       </p>
     </motion.div>

@@ -6,7 +6,6 @@ export const Footer = () => {
     <div className={styles.footer}>
       <div className={styles.links}>
         <Link to="/contacts">Contacts</Link>
-        <Link to="/kyc">KYC</Link>
         <Link to="/policy">Privacy Policy</Link>
         <Link to="/reviews">Reviews</Link>
       </div>
